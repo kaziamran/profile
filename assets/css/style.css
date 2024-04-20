@@ -388,6 +388,9 @@ a:hover {
 .about_info {
 	color: #00000B;
 }
+.about_info_img_width {
+    width: 30px;
+}
 
 .about_info ul li {
 	display: block;
