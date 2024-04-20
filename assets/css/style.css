@@ -113,7 +113,10 @@ a:hover {
 
 /* box_btn */
 .box_btn {
-	display: inline-block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 6px;
 	background-color: #ff3636;
 	color: #fff;
 	padding: 10px 30px;
@@ -419,13 +422,11 @@ a:hover {
 	color: #000;
 }
 
-.button .box_btn.left_space {
-	margin: 0 15px 0 0;
-}
-
 /* button */
 .button {
 	padding-top: 20px;
+	display: flex;
+	gap: 20px;
 }
 
 .button a {
