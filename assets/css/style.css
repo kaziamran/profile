@@ -746,3 +746,187 @@ a:hover {
     align-items: center;
     justify-content: center;
 }
+
+
+/*cta task section*/
+._cta_task_wrapper {
+    background: #140A44;
+    padding: 160px 0;
+    position: relative;
+    overflow: hidden;
+}
+._cta_task_wrapper::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/cta-left-before-abstract.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    left: 1%;
+    width: 379px;
+    height: 398px;
+}
+._cta_task_wrapper::after {
+    position: absolute;
+    content: "";
+    background-image: url("../img/cta-left-after-abstract.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    right: -58px;
+    width: 454px;
+    height: 454px;
+}
+._cta_task_headimg_txt {
+    font-family: 'Neurial Grotesk';
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.2;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+._cta_task_headimg_para {
+    font-family: 'Neurial Grotesk';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: #C0BCD2;
+    margin-bottom: 40px;
+}
+._cta_task_headimg_btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+._cta_task_headimg_btn1 {
+    margin: 0 28px 0 0;
+}
+._cta_task_headimg_get_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease-in-out;
+    width: 246px;
+    height: 60px;
+    background: #2A29E8;
+    border-radius: 6px;
+    font-family: 'Neurial Grotesk';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: #fff !important;
+    position: relative;
+    z-index: 1;
+}
+._cta_task_headimg_get_btn::before {
+    position: absolute;
+    content: "";
+    background: #FFFAE9;
+    width: 0;
+    height: 100%;
+    border-radius: 6px;
+    z-index: -1;
+    visibility: hidden;
+    opacity: 0;
+    top: 0;
+    transition: .2s all ease-in-out;
+}
+._cta_task_headimg_get_btn:hover::before {
+    visibility: visible;
+    opacity: 1;
+    left: 0;
+    width: 100%;
+    border-radius: 6px;
+}
+._cta_task_headimg_watch_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s all ease-in-out;
+    width: 182px;
+    height: 60px;
+    background: #fff;
+    border-radius: 6px;
+    font-family: 'Neurial Grotesk';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    color: #140A44 !important;
+    position: relative;
+    z-index: 1;
+}
+._cta_task_headimg_watch_btn:hover {
+    color: #fff !important;
+}
+._cta_task_headimg_watch_btn::before {
+    position: absolute;
+    content: "";
+    background: #7A9E5D;
+    width: 0;
+    height: 100%;
+    border-radius: 6px;
+    z-index: -1;
+    visibility: hidden;
+    opacity: 0;
+    top: 0;
+    transition: .2s all ease-in-out;
+}
+._cta_task_headimg_watch_btn:hover::before {
+    visibility: visible;
+    opacity: 1;
+    left: 0;
+    width: 100%;
+    border-radius: 6px;
+}
+
+/* responsive css */
+/* Ipad pro */
+@media only screen and (max-width: 991px) {
+    ._cta_task_wrapper::before, ._cta_task_wrapper::after {
+        display: none;
+    }
+    ._cta_task_wrapper {
+        padding: 100px 0;
+    }
+    ._cta_task_headimg_txt {
+        font-size: 35px;
+    }
+    ._cta_task_headimg_para {
+        font-size: 17px;
+    }
+}
+/* Ipad/Mobile L */
+@media only screen and (max-width: 767px) {
+    ._cta_task_headimg_get_btn {
+        width: 176px;
+        height: 56px;
+        font-size: 16px;
+    }
+    ._cta_task_headimg_watch_btn {
+        width: 140px;
+        height: 56px;
+        font-size: 16px;
+    }
+}
+/* Mobile */
+@media only screen and (max-width: 575px) {
+    ._cta_task_headimg_txt {
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 420px) {
+    ._cta_task_wrapper {
+        padding: 50px 0;
+    }
+    ._cta_task_headimg_btns {
+        flex-direction: column;
+    }
+    ._cta_task_headimg_btn1 {
+        margin: 0 0 20px;
+    }
+}
+/*cta task section end*/
