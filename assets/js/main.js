@@ -13,15 +13,12 @@ $(document).ready(function(){
 		scrollOffset: 60
     });
 	
-	
-	
 	/* ityped js */
 	
 	ityped.init(document.querySelector("#ityped"), {
         strings: ['Freelancer', 'Front-end Developer'],
         loop: true,
         cursorChar: "|"
-
     });
 	
 	/* ityped1 js */
@@ -30,7 +27,6 @@ $(document).ready(function(){
         strings: ['Freelancer', 'Front-end Developer'],
         loop: true,
         cursorChar: "|"
-
     });
 	
 	/* wow js */
@@ -93,9 +89,9 @@ $(document).ready(function(){
 	/* Sticky Header */
 	$(window).on('scroll', function () {
 		if ($(this).scrollTop() > 20) {
-			$('.header_fixed').addClass("sticky");
+			$('.menu_fixed').addClass("sticky");
 		} else {
-			$('.header_fixed').removeClass("sticky");
+			$('.menu_fixed').removeClass("sticky");
 		}
 	});
 	
