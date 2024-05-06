@@ -1,18 +1,7 @@
 /* 
 	Template Name: portfolio Template
 */
-
 $(document).ready(function(){
-	
-	$('.manu_bar ul').onePageNav({
-		currentClass: 'current',
-		changeHash: false,
-		scrollSpeed: 750,
-		scrollThreshold: 0.5,
-		easing: 'swing',
-		scrollOffset: 60
-    });
-	
 	/* ityped js */
 	
 	ityped.init(document.querySelector("#ityped"), {
@@ -86,14 +75,14 @@ $(document).ready(function(){
 	
 });
 	
-	/* Sticky Header */
-	$(window).on('scroll', function () {
-		if ($(this).scrollTop() > 20) {
-			$('.menu_fixed').addClass("sticky");
-		} else {
-			$('.menu_fixed').removeClass("sticky");
-		}
-	});
+/* Sticky Header */
+$(window).on('scroll', function () {
+	if ($(this).scrollTop() > 20) {
+		$('.menu_fixed').addClass("sticky");
+	} else {
+		$('.menu_fixed').removeClass("sticky");
+	}
+});
 	
 
 

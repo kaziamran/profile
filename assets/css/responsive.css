@@ -39,13 +39,6 @@
 		margin-bottom: 20px;
 	}
 	
-	/* onepagenav */
-	.navbar-collapse {
-		background: #000;
-		z-index: 9999;
-		opacity: 0.9;
-	}
-	
 	.home_content_title {
 		font-size: 35px;
 		margin-top: 20px;
@@ -86,19 +79,10 @@
 /* Mobile Layout: 320px. */
 
 @media only screen and (max-width: 767px) {
-	
-	/* onepagenav */
-	.navbar-collapse {
-		background: #000;
-		z-index: 9999;
-		opacity: 0.9;
-	}
-
 	.home_content_title {
 		font-size: 19px;
 		margin-top: 20px;
 	}
-	
 	.home_content_txt {
 		font-size: 12px;
 	}
@@ -113,20 +97,17 @@
 		font-size: 14px;
 	}
 	
-	
-	.service_area, .pricing_area, .skill_area, .portfolio_area, .experience_area, .news_area {
-		padding-bottom: 10px;
-	}
-	
-	.about_info ul li a {
-		font-size: 12px;
+	.service_area, .pricing_area, .portfolio_area, .about_area {
+		padding-top: 50px;
+		padding-bottom: 50px;
 	}
 	
 	.left::before, .right::before {
 		left: 2px;
 	}
-
-	
+	.profile_menu_list_itm {
+		color: #000;
+	}
 	.copyright_text p {
 		font-size: 16px;
 	}
@@ -145,19 +126,17 @@
 	.single_service {
 		margin-bottom: 30px;
 	}
+	.profile_menu_list {
+		background: #fff;
+		opacity: 0.9;
+		align-items: flex-start;
+		padding: 10px;
+	}
 }
-
 
 /* Wide Mobile Layout: 480px. */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-	
-	/* onepagenav */
-	.navbar-collapse {
-		background: #000;
-		z-index: 9999;
-		opacity: 0.9;
-	}
 	
 	#scrollUp {
 		right: 35px;
