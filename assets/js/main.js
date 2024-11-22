@@ -3,15 +3,12 @@
 */
 $(document).ready(function(){
 	/* ityped js */
-	
 	ityped.init(document.querySelector("#ityped"), {
         strings: ['Freelancer', 'Front-end Developer'],
         loop: true,
         cursorChar: "|"
     });
-	
 	/* ityped1 js */
-	
 	ityped.init(document.querySelector("#ityped1"), {
         strings: ['Freelancer', 'Front-end Developer'],
         loop: true,
@@ -22,7 +19,6 @@ $(document).ready(function(){
 	new WOW().init();	
 	
 	/* barfiller js */
-	
 	$(document).ready(function(){
 	 $('#bar1').barfiller({ barColor:'#FF214F', duration:'4000'});
 	 $('#bar2').barfiller({ barColor:'#FF214F', duration:'4000'});

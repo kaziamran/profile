@@ -37,9 +37,9 @@
 							<span class="navbar-toggler-icon"></span>
 						</button>
 						<div class="collapse navbar-collapse ml-auto manu_bar" id="navbarNav">
-							<ul class="navbar-nav ml-auto another profile_menu_list">
+							<ul class="navbar-nav ml-auto another profile_menu_list" id="myDIV">
 								<li class="profile_menu_list_li">
-									<a href="#home" class="profile_menu_list_itm">home</a>
+									<a href="#home" class="profile_menu_list_itm menu_active">home</a>
 								</li>
 								<li class="profile_menu_list_li">
 									<a href="#about" class="profile_menu_list_itm">about</a>
@@ -470,5 +470,17 @@
     <script src="assets/js/waypoint.min.js"></script>
 	<!-- main js -->
 	<script src="assets/js/main.js"></script>
+	<script>
+		// Add menu_active class to the current button (highlight it)
+		var header = document.getElementById("myDIV");
+		var btns = header.getElementsByClassName("profile_menu_list_itm");
+		for (var i = 0; i < btns.length; i++) {
+		  btns[i].addEventListener("click", function() {
+		  var current = document.getElementsByClassName("menu_active");
+		  current[0].className = current[0].className.replace(" menu_active", "");
+		  this.className += " menu_active";
+		  });
+		}
+	</script>
 </body>
 </html>

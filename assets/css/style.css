@@ -219,6 +219,9 @@ a:hover {
 .menu_area.menu_fixed.sticky a {
 	color: #000;
 }
+.menu_active {
+	color: #FF214F !important;
+}
 
 .header.menu_fixed.sticky{
 	color: white !important;
