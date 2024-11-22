@@ -128,9 +128,9 @@
 	}
 	.profile_menu_list {
 		background: #fff;
-		opacity: 0.9;
+		opacity: 0.92;
 		align-items: flex-start;
-		padding: 10px;
+		padding: 16px 0 16px 16px;
 	}
 }
 

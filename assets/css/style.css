@@ -130,14 +130,14 @@ a:hover {
     border: none !important;
 }
 ._toggler.collapsed .navbar-toggler-icon {
-    background-image: url("../img/header-r8-menu-ic.svg") !important;
+    background-image: url("../img/header-menu-icon.svg") !important;
     transition: 0.1s all ease-in-out;
-    max-width: 18px;
+    max-width: 20px;
 }
 ._toggler .navbar-toggler-icon {
-    background-image: url("../img/header-r8-menu-ic.svg") !important;
+    background-image: url("../img/header-menu-icon.svg") !important;
     transition: 0.1s all ease-in-out;
-    max-width: 18px;
+    max-width: 20px;
 }
 .dropdown-toggle::after {
     display: none;
@@ -181,20 +181,11 @@ a:hover {
 	top: 0;
 }
 
-.manu_bar ul li.current a, .manu_bar ul li a:hover {
-	color: #FF214F;
-}
-
-.menu_area.menu_fixed.sticky li.current a {
-	color: #FF214F !important;
-}
-
 .profile_menu_list {
     gap: 20px;
     align-items: center;
     margin: 0 0 0 auto;
 }
-
 .profile_menu_list_itm {
     font-family: 'Montserrat';
     font-weight: 500;
@@ -205,9 +196,8 @@ a:hover {
     display: flex;
     transition: .2s all ease;
 }
-
 .profile_menu_list_itm:hover {
-	color: #FF214F;
+	color: #FF214F !important;
 }
 
 .menu_area.menu_fixed .navbar-light .manu_bar .another ul li a{
@@ -227,7 +217,7 @@ a:hover {
 }
 
 .menu_area.menu_fixed.sticky a {
-	color: #333 !important;
+	color: #000;
 }
 
 .header.menu_fixed.sticky{
@@ -248,7 +238,6 @@ a:hover {
     line-height: 1.2;
     text-transform: uppercase;
 }
-
 .menu_logo_link:hover {
 	color: #FF214F;
 }
